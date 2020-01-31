@@ -21,14 +21,10 @@ class CPU:
         """Construct a new CPU."""
         self.ram = [0] * 256
         self.reg = [0] * 8
-        
         self.PC = self.reg[0]
-        
         self.FL = self.reg[4]
-        
         self.SP = self.reg[7]
         self.SP = 244
-
         
         self.commands = {
             0b00000001: self.hlt,
